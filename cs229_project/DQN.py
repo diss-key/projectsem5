@@ -187,7 +187,7 @@ if not BASELINE:
              
             if len(replay_buffer) > batch_size:
                 loss = compute_td_loss(batch_size)
-                losses.append(loss.data[0])
+                losses.append(loss.data)
             
     
     #test
